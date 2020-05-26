@@ -1,3 +1,3 @@
 [submodule "submodules/BepInEx.Harmony"]
 	path = submodules/BepInEx.Harmony
-	url = https://github.com/BepInEx/BepInEx.Harmony
+	url = https://github.com/ICanHazCode/BepInEx.Harmony
