@@ -57,12 +57,12 @@ namespace BepInEx
 			}
 		}
 
-        /// <summary>
-        /// Combines multiple paths together, as the specific method is not available in .NET 3.5.
-        /// </summary>
-        /// <param name="parts">The multiple paths to combine together.</param>
-        /// <returns>A combined path.</returns>
-        public static string CombinePaths(params string[] parts) => parts.Aggregate(Path.Combine);
+		/// <summary>
+		/// Combines multiple paths together, as the specific method is not available in .NET 3.5.
+		/// </summary>
+		/// <param name="parts">The multiple paths to combine together.</param>
+		/// <returns>A combined path.</returns>
+		public static string CombinePaths(params string[] parts) => parts.Aggregate(Path.Combine);
 
 		/// <summary>
 		/// Tries to parse a bool, with a default value if unable to parse.

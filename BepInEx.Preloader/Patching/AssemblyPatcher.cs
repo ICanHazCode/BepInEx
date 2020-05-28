@@ -76,7 +76,6 @@ namespace BepInEx.Preloader.Patching
 		///     Adds all patchers from all managed assemblies specified in a directory.
 		/// </summary>
 		/// <param name="directory">Directory to search patcher DLLs from.</param>
-		/// <param name="patcherLocator">A function that locates assembly patchers in a given managed assembly.</param>
 		public static void AddPatchersFromDirectory(string directory)
 		{
 			if (!Directory.Exists(directory))
@@ -177,7 +176,7 @@ namespace BepInEx.Preloader.Patching
 			{
 				return new AssemblyName(fullName).Name;
 			}
-			catch (Exception e)
+			catch (Exception)
 			{
 				return fullName;
 			}

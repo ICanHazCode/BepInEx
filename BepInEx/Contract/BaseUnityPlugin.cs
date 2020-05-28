@@ -26,11 +26,11 @@ namespace BepInEx
 		/// </summary>
 		public ConfigFile Config { get; }
 
-        /// <summary>
-        /// Create a new instance of a plugin and all of its tied in objects.
-        /// </summary>
-        /// <exception cref="InvalidOperationException">BepInPlugin attribute is missing.</exception>
-        protected BaseUnityPlugin()
+		/// <summary>
+		/// Create a new instance of a plugin and all of its tied in objects.
+		/// </summary>
+		/// <exception cref="InvalidOperationException">BepInPlugin attribute is missing.</exception>
+		protected BaseUnityPlugin()
 		{
 			var metadata = MetadataHelper.GetMetadata(this);
 			if(metadata == null)
